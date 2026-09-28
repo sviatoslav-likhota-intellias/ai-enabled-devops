@@ -15,10 +15,13 @@ Follow [constitution.md](constitution.md) and [docs/standards.md](docs/standards
 2. Set **Status** to `Draft`. Fill in every section.
 3. Put anything unclear in **Open Questions**. Do not guess.
 4. Set **Status** to `In Review` and ask a human to review.
-5. The human answers open questions, then sets **Status** to `Approved` or `Rejected`
-   and fills in **Human Approval** with their name and date.
+5. The human answers open questions, then approves or rejects the spec by either:
+   - stating it in the conversation with their name and date, for example
+     "Approved, Jane Doe, 2026-01-10", so the agent records it exactly as given; or
+   - editing **Status** and **Human Approval** in the file themselves.
 
 An agent never approves its own spec. Do not continue until Status is `Approved`.
+See [AGENTS.md](AGENTS.md#approvals) for all approval rules.
 
 ## 2. Create a plan and tasks
 

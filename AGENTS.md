@@ -23,7 +23,7 @@ Every change follows a specification approved by a human.
 | `tasks/` | Task breakdowns. `TEMPLATE.md` is the blank form. |
 | `review/` | `change-template.md`, the review checklist. |
 | `skills/` | Reusable AI skills, one folder per skill with `SKILL.md`. |
-| `skill-runs/` | One recorded run per skill. |
+| `skill-runs/` | One reference run per skill. Not updated for normal changes. |
 | `scripts/` | Validation scripts. |
 | `src/` | Application code. Empty until an approved spec. |
 | `tests/` | Tests. Empty until an approved spec. |
@@ -63,6 +63,25 @@ Each rule is answerable with Yes or No.
 4. Was a protected path modified without explicit human approval? Must be **No**.
 5. Were unclear requirements guessed instead of asked? Must be **No**.
 6. Did the agent approve its own specification? Must be **No**.
+
+## Approvals
+
+An approval is valid only if a human gives it in the conversation or edits the file themselves.
+
+| What | Valid approval | Recorded in |
+|---|---|---|
+| Spec | Human states approval with their name and date | The spec's **Human Approval** section, copied exactly as given |
+| Protected path change | Human approves that specific path and change | The plan's **Protected paths touched** section |
+
+- Never invent, assume, or reuse an approval.
+- Approving a spec does not approve protected path changes.
+- "Looks fine" without a name and date is not a spec approval. Ask for both.
+
+## Skill runs
+
+- `skill-runs/<skill-name>.md` holds one reference run per skill.
+- Do not add skill runs for normal changes. Skill output goes to `specs/`, `plans/`, or `review/`.
+- Re-record a skill's run only when its `SKILL.md` changes.
 
 ## Protected paths
 
