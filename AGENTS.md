@@ -85,6 +85,9 @@ An approval is valid only if a human gives it in the conversation or edits the f
 
 ## Protected paths
 
+Protected paths define how changes are specified, verified, and approved.
+They are protected so a change cannot make itself easier by editing its own rules.
+
 Do not create, modify, or delete these without explicit human approval in the conversation:
 
 - `AGENTS.md`, `CLAUDE.md`
@@ -95,7 +98,6 @@ Do not create, modify, or delete these without explicit human approval in the co
 - `review/change-template.md`
 - `skills/**`
 - `scripts/**`
-- `.gitignore`
 - Any spec whose Status is `Approved`
 
 ## Secret handling
@@ -113,5 +115,8 @@ Do not create, modify, or delete these without explicit human approval in the co
 - A specification is not `Approved`.
 - Validation fails and the fix would change scope, tests, or security.
 - The task would add a new dependency.
+- You are about to make a decision the spec does not state.
+  See the definition in [plans/TEMPLATE.md](plans/TEMPLATE.md#decisions-not-in-the-spec).
 
-When stopping, record the question in the spec's **Open Questions** section and wait.
+When stopping, record the question in the spec's **Open Questions** section,
+or in the plan's **Decisions not in the spec** section, and wait.

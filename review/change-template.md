@@ -17,6 +17,7 @@ An answer without evidence counts as **No**.
 | 6 | Are dependencies justified? | "None added", or a link to the spec's dependency entry | | |
 | 7 | Are protected paths unchanged or approved? | `git diff --stat main` lists no protected path, or a link to the approval | | |
 | 8 | Are relevant documents updated? | Changed doc files, or "Not applicable" with the reason | | |
+| 9 | Are all decisions not in the spec approved? | The plan's **Decisions not in the spec** section is "None", or every row names a human approver | | |
 
 ## Result
 
