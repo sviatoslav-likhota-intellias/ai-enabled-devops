@@ -38,6 +38,7 @@
 - **Q-1:** <An unresolved question.> — **Answer:** <pending>
 
 A spec with unanswered Open Questions cannot be `Approved`.
+An answer that defines behavior must also appear in Requirements and Acceptance Criteria before approval.
 
 ## Human Approval
 

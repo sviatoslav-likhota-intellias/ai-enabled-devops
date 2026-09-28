@@ -15,7 +15,10 @@ Follow [constitution.md](constitution.md) and [docs/standards.md](docs/standards
 2. Set **Status** to `Draft`. Fill in every section.
 3. Put anything unclear in **Open Questions**. Do not guess.
 4. Set **Status** to `In Review` and ask a human to review.
-5. The human answers open questions, then approves or rejects the spec by either:
+5. The human answers every open question.
+6. For every answer that defines behavior, add a requirement and an acceptance criterion.
+   An answer that stays only in Open Questions cannot be tested.
+7. The human approves or rejects the spec by either:
    - stating it in the conversation with their name and date, for example
      "Approved, Jane Doe, 2026-01-10", so the agent records it exactly as given; or
    - editing **Status** and **Human Approval** in the file themselves.
