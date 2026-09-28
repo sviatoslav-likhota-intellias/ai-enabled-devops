@@ -12,3 +12,7 @@ Thumbs.db
 .env.*
 *.pem
 *.key
+
+# Gradle build output
+.gradle/
+build/

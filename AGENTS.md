@@ -25,8 +25,8 @@ Every change follows a specification approved by a human.
 | `skills/` | Reusable AI skills, one folder per skill with `SKILL.md`. |
 | `skill-runs/` | One reference run per skill. Not updated for normal changes. |
 | `scripts/` | Validation scripts. |
-| `src/` | Application code. Empty until an approved spec. |
-| `tests/` | Tests. Empty until an approved spec. |
+| `src/` | Application code. Java code in `src/main/java`, Java tests in `src/test/java`. |
+| `tests/` | Tests for stacks without a standard test location. See `tests/README.md`. |
 
 ## Validation commands
 
@@ -34,9 +34,10 @@ Run from the repository root:
 
 ```bash
 bash scripts/validate.sh
+./gradlew test
 ```
 
-A change is valid only when the command exits with code `0`.
+A change is valid only when each command exits with code `0`.
 Once a technology stack is approved, its test command is added here.
 
 ## Governance documents
