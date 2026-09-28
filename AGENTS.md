@@ -34,6 +34,7 @@ Run from the repository root:
 
 ```bash
 bash scripts/validate.sh
+./gradlew test
 ```
 
 A change is valid only when the command exits with code `0`.

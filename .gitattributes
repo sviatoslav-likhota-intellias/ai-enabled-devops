@@ -3,3 +3,10 @@
 
 # Shell scripts must keep LF on every platform, or bash fails to run them.
 *.sh text eol=lf
+
+# Gradle wrapper scripts must keep their native line endings.
+gradlew text eol=lf
+*.bat text eol=crlf
+
+# Binary files.
+*.jar binary
