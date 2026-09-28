@@ -1,0 +1,14 @@
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
