@@ -9,7 +9,7 @@ Conventions for every change. Each has one good and one bad example.
 
 | Good | Bad |
 |---|---|
-| `specs/health-endpoint.md`, `plans/health-endpoint.md` | `specs/HealthEndpoint_v2 FINAL.md` |
+| `specs/version-endpoint.md`, `plans/version-endpoint.md` | `specs/VersionEndpoint_v2 FINAL.md` |
 
 ## Change submission
 
@@ -19,7 +19,7 @@ Conventions for every change. Each has one good and one bad example.
 
 | Good | Bad |
 |---|---|
-| `Add health endpoint (specs/health-endpoint.md)` | `fixes and stuff` |
+| `Add version endpoint (specs/version-endpoint.md)` | `fixes and stuff` |
 
 ## Documentation
 
