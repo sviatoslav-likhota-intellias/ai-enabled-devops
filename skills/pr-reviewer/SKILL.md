@@ -20,7 +20,7 @@ Use it before submitting or merging any change.
 1. Read [AGENTS.md](../../AGENTS.md) and [review/change-template.md](../../review/change-template.md).
 2. Copy the checklist to `review/<feature-name>.md`.
 3. List the changed files: `git diff --stat <change>`.
-4. Answer each of the 8 questions in order, using the template's **Expected evidence** column.
+4. Answer every question in order, using the template's **Expected evidence** column.
 5. Answer only `Yes`, `No`, or `Not applicable`.
 6. Attach evidence to every answer: a link, command output, or file reference.
 7. If evidence cannot be found, answer `No`.
@@ -47,7 +47,7 @@ and the Result section complete.
 
 | Check | Pass |
 |---|---|
-| Are all 8 questions answered? | Yes |
+| Is every checklist question answered? | Yes |
 | Is every answer `Yes`, `No`, or `Not applicable`? | Yes |
 | Does every answer have evidence? | Yes |
 | Does every `Not applicable` have a reason? | Yes |
