@@ -37,8 +37,10 @@ See [AGENTS.md](AGENTS.md#approvals) for all approval rules.
 ## 3. Implement and test approved scope
 
 1. Change only the files listed in the plan.
-2. Write tests for every acceptance criterion in `tests/`.
-3. Put application code in `src/`.
+2. Write tests for every acceptance criterion.
+   Java tests go in the standard Spring Boot location `src/test/java` (see [tests/README.md](tests/README.md)).
+   Tests for other stacks go in `tests/`.
+3. Put application code in `src/` (for Java, `src/main/java`).
 4. Do not add unapproved dependencies or touch protected paths (see [AGENTS.md](AGENTS.md)).
 5. If something new comes up, stop and update the spec's Open Questions.
 
