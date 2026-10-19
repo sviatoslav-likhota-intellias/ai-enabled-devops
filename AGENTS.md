@@ -24,6 +24,7 @@ Every change follows a specification approved by a human.
 | `review/` | `change-template.md`, the review checklist. |
 | `skills/` | Reusable AI skills, one folder per skill with `SKILL.md`. |
 | `skill-runs/` | One reference run per skill. Not updated for normal changes. |
+| `smoke-test/` | Smoke-test results and verbatim session transcripts. Historical records. |
 | `scripts/` | Validation scripts. |
 | `src/` | Application code. Java code in `src/main/java`, Java tests in `src/test/java`. |
 | `tests/` | Tests for stacks without a standard test location. See `tests/README.md`. |

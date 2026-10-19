@@ -4,12 +4,16 @@ Conventions for every change. Each has one good and one bad example.
 
 ## Naming
 
-- Files and folders use lowercase `kebab-case`.
+- Files and folders use lowercase `kebab-case`, except:
+  - Conventional uppercase documents: `AGENTS.md`, `CLAUDE.md`, `README.md`, `CONTRIBUTING.md`, `TEMPLATE.md`, `SKILL.md`.
+  - Files whose exact name a tool requires.
+- Code and tests follow the naming conventions of their language.
 - Specs, plans, and tasks for one feature share the same name.
 
 | Good | Bad |
 |---|---|
 | `specs/version-endpoint.md`, `plans/version-endpoint.md` | `specs/VersionEndpoint_v2 FINAL.md` |
+| Java class `src/main/java/<package>/RequestLoggingFilter.java` | Java class `src/main/java/<package>/request-logging-filter.java` |
 
 ## Change submission
 
@@ -47,7 +51,7 @@ Conventions for every change. Each has one good and one bad example.
 
 | Good | Bad |
 |---|---|
-| `token = env("API_TOKEN")` | `token = "sk-live-12ab34cd..."` |
+| `token = env("API_TOKEN")` | `token = "<the real token value>"` |
 
 ## Testing
 
